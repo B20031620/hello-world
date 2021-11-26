@@ -1,0 +1,14 @@
+char* StrCpy(char* src){
+	int n=0;
+	if(*(src+n)!='\0'){
+		n++;
+	}
+	char* string=(char *)malloc((n+1)*sizeof(char));
+	n=0;
+	while(*(src+n)!='\0'){
+		*(string+n)=*(src+n);
+		n++;
+	}
+	*(string+n)='\0';
+	return string;
+}
